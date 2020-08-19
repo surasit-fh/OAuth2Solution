@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.API", "OAuth2.API\OAuth2.API.csproj", "{7648E3C1-FB6F-46DC-B7BE-576088F1C2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.IDP", "OAuth2.IDP\OAuth2.IDP.csproj", "{EAA89556-4024-418A-ADA0-277063B24CC4}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7648E3C1-FB6F-46DC-B7BE-576088F1C2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7648E3C1-FB6F-46DC-B7BE-576088F1C2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7648E3C1-FB6F-46DC-B7BE-576088F1C2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7648E3C1-FB6F-46DC-B7BE-576088F1C2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA89556-4024-418A-ADA0-277063B24CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA89556-4024-418A-ADA0-277063B24CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA89556-4024-418A-ADA0-277063B24CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA89556-4024-418A-ADA0-277063B24CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
