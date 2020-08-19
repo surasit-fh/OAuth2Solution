@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.API", "OAuth2.API\OA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.IDP", "OAuth2.IDP\OAuth2.IDP.csproj", "{EAA89556-4024-418A-ADA0-277063B24CC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.Model", "OAuth2.Model\OAuth2.Model.csproj", "{E2092599-E27C-4BD0-8281-0C8CD5049699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.DAL", "OAuth2.DAL\OAuth2.DAL.csproj", "{349363F4-8A0A-495C-ADD2-71563C5D30BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{EAA89556-4024-418A-ADA0-277063B24CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAA89556-4024-418A-ADA0-277063B24CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAA89556-4024-418A-ADA0-277063B24CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2092599-E27C-4BD0-8281-0C8CD5049699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2092599-E27C-4BD0-8281-0C8CD5049699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2092599-E27C-4BD0-8281-0C8CD5049699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2092599-E27C-4BD0-8281-0C8CD5049699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349363F4-8A0A-495C-ADD2-71563C5D30BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349363F4-8A0A-495C-ADD2-71563C5D30BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349363F4-8A0A-495C-ADD2-71563C5D30BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349363F4-8A0A-495C-ADD2-71563C5D30BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
