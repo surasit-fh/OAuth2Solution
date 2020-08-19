@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OAuth2.IDP.Models.Requests;
+using OAuth2.IDP.Models.Responses;
+using OAuth2.IDP.Process;
+using OAuth2.Model.Headers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +15,21 @@ namespace OAuth2.IDP.Controllers
     public class AccountController : Controller
     {
         [HttpPost("Login")]
-        public string Login()
+        [Consumes("application/json")]
+        public AccountControlResponse Login([FromHeader]BaseHeader header, AccountRequest accountRequest)
         {
-            return "Login is success";
+            AccountProcess accountProcess = new AccountProcess();
+            AccountControlResponse response = accountProcess.LoginProcess(header.Authorization.Substring("Basic".Length).Trim(), accountRequest.AuthenticationInfo, accountRequest.TokenInfo);
+            return response;
         }
 
-        [HttpPost("Logout")]
-        public string Logout()
+        [HttpGet("Logout")]
+        [Consumes("application/x-www-form-urlencoded")]
+        public AccountControlResponse Logout([FromHeader]BaseHeader header)
         {
-            return "Logout is success";
+            AccountProcess accountProcess = new AccountProcess();
+            AccountControlResponse response = accountProcess.LogoutProcess(header.Authorization.Substring("Bearer".Length).Trim());
+            return response;
         }
     }
 }

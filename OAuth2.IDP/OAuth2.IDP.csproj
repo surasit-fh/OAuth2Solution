@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\OAuth2.DAL\OAuth2.DAL.csproj" />
+    <ProjectReference Include="..\OAuth2.Model\OAuth2.Model.csproj" />
+  </ItemGroup>
+
 </Project>
