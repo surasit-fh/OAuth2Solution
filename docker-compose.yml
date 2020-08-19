@@ -1,0 +1,24 @@
+version: '3'
+services:
+    oauth2_api:
+        container_name: oauth2_api_container
+        image: oauth2_api_img:1.0
+        build:
+            context: ./Publish/API
+            dockerfile: oauth2_api_dockerfile
+        expose:
+            - "80"
+        ports:
+            - "3000:80"
+        restart: on-failure
+    oauth2_idp:
+        container_name: oauth2_idp_container
+        image: oauth2_idp_img:1.0
+        build:
+            context: ./Publish/IDP
+            dockerfile: oauth2_idp_dockerfile
+        expose:
+            - "80"
+        ports:
+            - "2000:80"
+        restart: on-failure
